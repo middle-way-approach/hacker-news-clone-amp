@@ -1,0 +1,25 @@
+{
+  "name": "hacker-news-clone-amp",
+  "version": "0.9.0",
+  "description": "Hacker News clone built with Google AMP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack-dev-server --mode development --open",
+    "gh-pages": "webpack --mode production && gh-pages -d dist"
+  },
+  "author": "middle-way-approach",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.2",
+    "gh-pages": "^1.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "pug-html-loader": "^1.1.5",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

@@ -1,0 +1,11 @@
+extends layout
+include mixins
+
+block header
+  +header('show')
+
+block content
+  +list('https://api.hnpwa.com/v0/show/1.json')
+
+block canonical
+  +canonical('/show')

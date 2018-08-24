@@ -1,0 +1,50 @@
+h1 {
+  font-size: 0.8em;
+  font-weight: normal;
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 860px;
+  background-color: #f6f6ef;
+  margin: 10px auto;
+}
+.header {
+  padding: 4px 0px;
+  background-color: #ff6600;
+}
+.header * {
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+.header img {
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+}
+.pipe {
+  margin: 0 2px;
+}
+.pipe:before {
+  content: "|";
+}
+.list {
+  padding: 5px;
+}
+.subline {
+  color: #828282;
+  font-size: 0.8em;
+}
+.list-entry {
+  margin: 4px 0;
+}
+.active {
+  color: white;
+}

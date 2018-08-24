@@ -1,0 +1,29 @@
+mixin list(url)
+  section.list
+    amp-list.list(width='auto', height='800', layout='fixed-height', src=url, items='.')
+      template(type='amp-mustache')
+        .list-entry
+          div
+            a(href='{{url}}') {{title}}
+            | ({{domain}})
+          .subline
+            | {{points}} Points by {{user}} {{time_ago}}
+            i.pipe
+            | {{comments_count}} comments
+
+mixin header(section)
+  nav.header
+    h1.title
+      a(href='index.html')
+        amp-img(src="assets/icon.png" alt="logo" height="24" width="24")
+        | AMP Hacker News
+    a(href='new.html' class= section === 'new' ? 'active' : '') new
+    i.pipe
+    a(href='show.html' class= section === 'show' ? 'active' : '') show
+    i.pipe
+    a(href='ask.html' class= section === 'ask' ? 'active' : '') ask
+    i.pipe
+    a(href='jobs.html' class= section === 'jobs' ? 'active' : '') jobs
+
+mixin canonical(url)
+  link(rel="canonical" href=url)
