@@ -1,0 +1,45 @@
+<head><meta charset="utf-8"/><meta name="description" content="Hacker News clone built with Google AMP"/><title>AMP Hacker News clone</title><script async="" src="https://cdn.ampproject.org/v0.js"></script><script async="" custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script><script async="" custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script><style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><style>h1 {
+  font-size: 0.8em;
+  font-weight: normal;
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 860px;
+  background-color: #f6f6ef;
+  margin: 10px auto;
+}
+.header {
+  padding: 6px 5px;
+  background-color: #ff6600;
+}
+.header * {
+  margin: 0 2px;
+}
+.title {
+  font-weight: bold;
+}
+.pipe {
+  margin: 0 2px;
+}
+.pipe:before {
+  content: "|";
+}
+.list {
+  padding: 5px;
+}
+.subline {
+  color: #828282;
+  font-size: 0.8em;
+}
+.list-entry {
+  margin: 4px 0;
+}
+.active {
+  color: white;
+}
+</style></head><body><div class="app"><nav class="header"><h1 class="title"><a href="/index.html">AMP Hacker News</a></h1><a href="/new.html">new</a><i class="pipe"></i><a href="/show.html">show</a><i class="pipe"></i><a href="/ask.html">ask</a><i class="pipe"></i><a href="/jobs.html">jobs</a></nav><section class="list"><amp-list class="list" width="auto" height="800" layout="fixed-height" src="https://api.hnpwa.com/v0/news/1.json" items="."><template type="amp-mustache"><div class="list-entry"><div><a href="{{url}}">{{title}}</a>({{domain}})</div><div class="subline">{{points}} Points by {{user}} {{time_ago}}<i class="pipe"></i>{{comments_count}} comments</div></div></template></amp-list></section></div><script type="text/javascript" src="main.js"></script></body>
